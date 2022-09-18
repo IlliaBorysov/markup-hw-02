@@ -1,14 +1,210 @@
-body{
+
+/* ----PALETTE---- */
+
+:root{
+--focus-color: #2196F3;
+--logo-decoration-header: #000000;
+--logo-decoration-footer: #FFFFFF;
+--main-text: #757575;
+--heder-text: #212121;
+--background-default: #FFFFFF;
+--background-additional: #F5F4FA;
+--decoration-lines: #ECECEC;
+--decoration-pic-frames: #EEEEEE;
+--background-hero: #2F303A;
+--hero-heading-text: #FFFFFF;
+--button-active-text: #FFFFFF;
+--button-hero-active: #188CE8;
+--background-footer: #2F303A;
+--footer-text-address: #ffffff;
+--footer-text-contacts: rgba(255, 255, 255, 0.6);
+}
+
+/* ----GENERAL---- */
+body {
     font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+h1, h2, h3, h4 {
+    color: var(--heder-text);
+}
+
+/* ----HEADER---- */
+.header-logo, .footer-logo {
+        color: var(--focus-color);
+        font-family: 'Raleway';
         font-style: normal;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 24px;
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 1.2;
         letter-spacing: 0.03em;
 }
-:root{
---main-color: #2196F3
+.logo-design {
+    color: var(--logo-decoration-header);
 }
-.logo {
-    color: var(--main-color);
+.header-nav-list-item {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+        color: var(--heder-text);
+        text-decoration: none;
+}
+.header-contacts-list-item {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+        color: var(--main-text);
+}
+.header-nav-list-item:hover {
+    color: var(--focus-color);
+}
+.header-nav-list-item:focus {
+    color: var(--focus-color);
+}
+.header-contacts-list-item:hover {
+    color: var(--focus-color);
+}
+.header-contacts-list-item:focus {
+    color: var(--focus-color);
+}
+
+/* ----HERO---- */
+.hero {
+    background-color: var(--background-hero);
+}
+.hero-heading {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color:var(--hero-heading-text)
+}
+.hero-button {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    background-color: var(--focus-color);
+    color: var(--button-active-text);
+}
+.hero-button:hover {
+    background-color: var(--button-hero-active);
+}
+.hero-button:focus {
+    background-color: var(--button-hero-active);
+}
+
+/* ----FEATURES---- */
+.features-list-heading {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+/* ----WORKS---- */
+.works-heading {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.17;
+        text-align: center;
+        letter-spacing: 0.03em;
+}
+
+/* ----TEAM---- */
+.team-heading {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+.team-list-heading {   
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+.team-list-text {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.19;
+        text-align: center;
+        letter-spacing: 0.03em;
+}
+/* ----FOOTER---- */
+.footer {
+    background-color: var(--background-footer);
+}
+.footer-logo-design {
+color: var(--logo-decoration-footer);
+}
+.footer-list-address {
+    font-style: normal;
+    color: var(--footer-text-address);
+}
+.footer-list-contacts {
+    font-style: normal;
+    color: var(--footer-text-contacts);
+}
+
+/* #############################PORTFOLIO############################ */
+
+/* ----FILTR---- */
+
+.filtr-heading {
+    display: none;
+}
+.portfolio-filtr-button {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+    background-color: var(--background-additional);
+    color: var(--heder-text);
+}
+.portfolio-filtr-button:hover {
+    background-color: var(--focus-color);
+}
+.portfolio-filtr-button:focus {
+    background-color: var(--focus-color);
+}
+
+/* ----GALLERY---- */
+.gallery-heading {
+    display: none;
+}
+.gallery-list-heading {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+
+.gallery-list-text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+    color: var(--main-text);
 }
