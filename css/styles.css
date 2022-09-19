@@ -60,6 +60,9 @@ h1, h2, h3, h4 {
         color: var(--heder-text);
         text-decoration: none;
 }
+.current {
+    color: var(--focus-color);
+}
 .header-contacts-list-item {
         font-weight: 500;
         font-size: 14px;
@@ -94,6 +97,7 @@ h1, h2, h3, h4 {
     color:var(--hero-heading-text)
 }
 .hero-button {
+    font-family: inherit;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
@@ -103,10 +107,7 @@ h1, h2, h3, h4 {
     background-color: var(--focus-color);
     color: var(--button-active-text);
 }
-.hero-button:hover {
-    background-color: var(--button-hero-active);
-}
-.hero-button:focus {
+.hero-button:hover, .hero-button:focus {
     background-color: var(--button-hero-active);
 }
 
@@ -174,6 +175,7 @@ color: var(--logo-decoration-footer);
     display: none;
 }
 .portfolio-filtr-button {
+    font-family: inherit;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
@@ -182,10 +184,7 @@ color: var(--logo-decoration-footer);
     background-color: var(--background-additional);
     color: var(--heder-text);
 }
-.portfolio-filtr-button:hover {
-    background-color: var(--focus-color);
-}
-.portfolio-filtr-button:focus {
+.portfolio-filtr-button:hover, .portfolio-filtr-button:focus {
     background-color: var(--focus-color);
 }
 
