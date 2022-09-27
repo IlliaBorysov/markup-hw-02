@@ -205,6 +205,7 @@ a.current {
 /* ----TEAM---- */
 .team {
     background-color: var(--background-additional);
+    padding-bottom: 94px;
 }
 .team-heading {
     padding-top: 94px;
@@ -276,6 +277,15 @@ a.current {
 .filtr-heading {
     display: none;
 }
+.portfolio-filtr-list {
+    display: flex;
+    justify-content: center;
+    padding-top: 94px;
+    padding-bottom: 50px;
+}
+.portfolio-filtr-item:not(:last-child) {
+    margin-left: 8px;
+}
 .portfolio-filtr-button {
     font-family: inherit;
     font-weight: 500;
@@ -288,19 +298,36 @@ a.current {
 }
 .portfolio-filtr-button:hover, .portfolio-filtr-button:focus {
     background-color: var(--focus-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 /* ----GALLERY---- */
+.gallery-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: -30px;
+    margin-left: -30px;
+    padding-bottom: 94px;
+}
+.gallery-list-item {
+    margin-bottom: 30px;
+    margin-left: 30px;
+    border: 1px solid var(--decoration-pic-frames);
+}
 .gallery-heading {
     display: none;
 }
+
 .gallery-list-heading {
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
+    margin-top: 20px;
+    margin-bottom: 4px;
+    padding-left: 24px;
+    padding-right: 24px;
 }
-
 .gallery-list-text {
     font-style: normal;
     font-weight: 400;
@@ -308,4 +335,7 @@ a.current {
     line-height: 1.88;
     letter-spacing: 0.03em;
     color: var(--main-text);
+    padding-bottom: 20px;
+    padding-left: 24px;
+    padding-right: 24px;
 }
