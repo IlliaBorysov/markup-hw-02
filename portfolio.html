@@ -5,14 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Портфоліо</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-    <header class="header">
+   <header class="header">
         <div class="header-container container">
             <nav class="navigation">
                  <a class="header-logo" href="./index.html">Web<span class="logo-design">Studio</span></a>
@@ -23,8 +23,12 @@
                     </ul>
             </nav>
             <ul class="header-contacts-list">
-                <li class="header-contacts-list-item"><a class="header-contacts-list-item-link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                <li class="header-contacts-list-item"><a class="header-contacts-list-item-link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+                <li class="header-contacts-list-item"><a class="header-contacts-list-item-link" href="mailto:info@devstudio.com"><svg class="header-nav-icon" width="16" height="12">
+                    <use href="./images/sprite.svg#envelope"></use>
+                </svg>info@devstudio.com</a></li>
+                <li class="header-contacts-list-item"><a class="header-contacts-list-item-link" href="tel:+380961111111"><svg class="header-nav-icon" width="10" height="16">
+                    <use href="./images/sprite.svg#telephone"></use>
+                </svg>+38 096 111 11 11</a></li>
             </ul>
         </div>
     </header>
@@ -46,49 +50,67 @@
                 <h2 class="visually-hidden">Галерея</h2>
             <ul class="gallery-list">
                 <li class="gallery-list-item"><a href="">
-                    <img class="gallery-list-pic" src="./images/tech.jpg" alt="Технокряк" width="368" height="292">
-                    <h3 class="gallery-list-heading">Технокряк</h3>
-                    <p class="gallery-list-text">Веб-сайт</p>
+                    <img class="gallery-list-pic" src="./images/tech.jpg" alt="Технокряк" width="370" height="294">
+                    <div class="gallery-list-container">
+                        <h3 class="gallery-list-heading">Технокряк</h3>
+                        <p class="gallery-list-text">Веб-сайт</p>
+                    </div>
                 </a></li>
                 <li class="gallery-list-item"><a href="">
-                    <img class="gallery-list-pic" src="./images/poster.jpg" alt="Постер New Orlean vs Golden Star" width="368" height="292">
-                    <h3 class="gallery-list-heading">Постер New Orlean vs Golden Star</h3>
-                    <p class="gallery-list-text">Дизайн</p>
+                    <img class="gallery-list-pic" src="./images/poster.jpg" alt="Постер New Orlean vs Golden Star" width="370" height="294">
+                    <div class="gallery-list-container">
+                        <h3 class="gallery-list-heading">Постер New Orlean vs Golden Star</h3>
+                        <p class="gallery-list-text">Дизайн</p>
+                    </div>
                 </a></li>
                 <li class="gallery-list-item"><a href="">
-                    <img class="gallery-list-pic" src="./images/rest.jpg" alt="Ресторан Seafood" width="368" height="292">
-                    <h3 class="gallery-list-heading">Ресторан Seafood</h3>
-                    <p class="gallery-list-text">Додаток</p>
+                    <img class="gallery-list-pic" src="./images/rest.jpg" alt="Ресторан Seafood" width="370" height="294">
+                    <div class="gallery-list-container">
+                        <h3 class="gallery-list-heading">Ресторан Seafood</h3>
+                        <p class="gallery-list-text">Додаток</p>
+                    </div>
                 </a></li>
                 <li class="gallery-list-item"><a href="">
-                    <img class="gallery-list-pic" src="./images/prime.jpg" alt="Проєкт Prime" width="368" height="292">
-                    <h3 class="gallery-list-heading">Проєкт Prime</h3>
-                    <p class="gallery-list-text">Маркетинг</p>
+                    <img class="gallery-list-pic" src="./images/prime.jpg" alt="Проєкт Prime" width="370" height="294">
+                   <div class="gallery-list-container">
+                        <h3 class="gallery-list-heading">Проєкт Prime</h3>
+                        <p class="gallery-list-text">Маркетинг</p>
+                   </div>
                 </a></li>
                 <li class="gallery-list-item"><a href="">
-                    <img class="gallery-list-pic" src="./images/boxes.jpg" alt="Проєкт Boxes" width="368" height="292">
-                    <h3 class="gallery-list-heading">Проєкт Boxes</h3>
-                    <p class="gallery-list-text">Додаток</p>
+                    <img class="gallery-list-pic" src="./images/boxes.jpg" alt="Проєкт Boxes" width="370" height="294">
+                    <div class="gallery-list-container">
+                        <h3 class="gallery-list-heading">Проєкт Boxes</h3>
+                        <p class="gallery-list-text">Додаток</p>
+                    </div>
                 </a></li>
                 <li class="gallery-list-item"><a href="">
-                    <img class="gallery-list-pic" src="./images/insp.jpg" alt="Inspiration has no Borders" width="368" height="292">
-                    <h3 class="gallery-list-heading">Inspiration has no Borders</h3>
-                     <p class="gallery-list-text">Веб-сайт</p>
+                    <img class="gallery-list-pic" src="./images/insp.jpg" alt="Inspiration has no Borders" width="370" height="294">
+                   <div class="gallery-list-container">
+                        <h3 class="gallery-list-heading">Inspiration has no Borders</h3>
+                        <p class="gallery-list-text">Веб-сайт</p>
+                   </div>
                 </a></li>
                 <li class="gallery-list-item"><a href="">
-                    <img class="gallery-list-pic" src="./images/limited.jpg" alt="Видання Limited Edition" width="368" height="292">
-                    <h3 class="gallery-list-heading">Видання Limited Edition</h3>
-                     <p class="gallery-list-text">Дизайн</p>
+                    <img class="gallery-list-pic" src="./images/limited.jpg" alt="Видання Limited Edition" width="370" height="294">
+                    <div class="gallery-list-container">
+                        <h3 class="gallery-list-heading">Видання Limited Edition</h3>
+                        <p class="gallery-list-text">Дизайн</p>
+                    </div>
                 </a></li>
                 <li class="gallery-list-item"><a href="">
-                    <img class="gallery-list-pic" src="./images/lab.jpg" alt="Проєкт LAB" width="368" height="292">
-                    <h3 class="gallery-list-heading">Проєкт LAB</h3>
-                    <p class="gallery-list-text">Маркетинг</p>
+                    <img class="gallery-list-pic" src="./images/lab.jpg" alt="Проєкт LAB" width="370" height="294">
+                    <div class="gallery-list-container">
+                        <h3 class="gallery-list-heading">Проєкт LAB</h3>
+                        <p class="gallery-list-text">Маркетинг</p>
+                    </div>
                 </a></li>
                 <li class="gallery-list-item"><a href="">
-                    <img class="gallery-list-pic" src="./images/business.jpg" alt="Growing Business" width="368" height="292">
-                    <h3 class="gallery-list-heading">Growing Business</h3>
-                <p class="gallery-list-text">Додаток</p>
+                    <img class="gallery-list-pic" src="./images/business.jpg" alt="Growing Business" width="370" height="294">
+                    <div class="gallery-list-container">
+                        <h3 class="gallery-list-heading">Growing Business</h3>
+                        <p class="gallery-list-text">Додаток</p>
+                    </div>
                 </a></li>
             </ul>
             </div>
@@ -96,14 +118,52 @@
     </main>
     <footer class="footer">
         <div class="container">
-            <a href="./index.html" class="footer-logo logo">Web<span class="footer-logo-design">Studio</span></a>
-        <address class="footer-list">
-            <ul>
-                <li class="footer-list-address"><a class="footer-list-address-link" href="https://www.google.com/maps/d/viewer?mid=10uSM3H-mIU3GznYo2szRIEphczw&hl=en_US&ll=50.42732700000001%2C30.538092&z=17">м. Київ, пр-т Лесі Українки, 26</a></li>
-                <li class="footer-list-contacts"><a class="footer-list-contacts-link"  href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                <li class="footer-list-contacts"><a class="footer-list-contacts-link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+           <div>
+             <a href="./index.html" class="footer-logo logo">Web<span class="footer-logo-design">Studio</span></a>
+                <address class="footer-list">
+                    <ul>
+                        <li class="footer-list-address"><a class="footer-list-address-link" href="https://www.google.com/maps/d/viewer?mid=10uSM3H-mIU3GznYo2szRIEphczw&hl=en_US&ll=50.42732700000001%2C30.538092&z=17">м. Київ, пр-т Лесі Українки, 26</a></li>
+                        <li class="footer-list-contacts"><a class="footer-list-contacts-link"  href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                        <li class="footer-list-contacts"><a class="footer-list-contacts-link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+                    </ul>
+                </address>
+           </div>
+           <div class="join">
+            <h3 class="join-header">приєднуйтесь</h3>
+            <ul class="join-social-list">
+                        <li class="join-social-list-item">
+                            <a href="" class="join-social-list-item-link">
+                                <svg class="join-social-icon" width="20" height="20">
+                                    <use href="./images/sprite.svg#instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="join-social-list-item">
+                            <a href="" class="join-social-list-item-link">
+                                <svg class="join-social-icon" width="20" height="20">
+                                    <use href="./images/sprite.svg#twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="join-social-list-item">
+                            <a href="" class="join-social-list-item-link">
+                                <svg class="join-social-icon" width="20" height="20">
+                                    <use href="./images/sprite.svg#facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="join-social-list-item">
+                            <a href="" class="join-social-list-item-link">
+                                <svg class="join-social-icon" width="20" height="20">
+                                    <use href="./images/sprite.svg#linkedin"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
             </ul>
-        </address>
+           </div>
+        </div>
     </footer>
 </body>
 </html>
